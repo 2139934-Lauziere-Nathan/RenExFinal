@@ -23,3 +23,9 @@ titre VARCHAR(100),
 complete SMALLINT,
 FOREIGN KEY (tache_id) REFERENCES taches (id)
 );
+
+INSERT INTO public.uilisateur (id,nom,prenom,courriel,cle_api,password)
+VALUES (1,'test','pretest','test@test.tes', 123456789, 'testpass');
+
+insert into public.taches (id, utilisateur_id, titre, description, date_debut, date_echeance, complete)
+VALUES(1,1,'tache1', 'desc', '2024-12-01','2024-12-02',0);
