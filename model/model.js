@@ -1,4 +1,5 @@
 const db = require("../.src/config/pg_db");
+const db = require("../.src/.config/pg_db");
 
 const mod = {
     getAll: (id) => {
