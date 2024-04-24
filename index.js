@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
     res.send("<p>index</p>");
 });
 //route de base pour le reste des route
-app.use('/api/exam', require('./route/route.js'));
+app.use('/api/exam', require('./route/route'));
 
 //garde le serveur ouvert
 app.listen(PORT, () => {

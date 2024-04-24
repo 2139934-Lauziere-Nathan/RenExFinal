@@ -4,7 +4,7 @@ const controller = require('../controlleur/controlleur');
 
 
 //creation de la route pour tout afficher
-router.get('/tous:id', controller.getall);
+router.get('/tous', controller.getall);
 
 
 module.exports = router;
