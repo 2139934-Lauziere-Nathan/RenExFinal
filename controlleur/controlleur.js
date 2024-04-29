@@ -14,7 +14,7 @@ getall: async (req, res) => {
         }
     } catch (error) {
         console.error(`Error fetching tache with ID ${auteur_id}:`, error);
-        res.status(500).json({ error: 'Internal server error' });
+        res.status(500).json({ error: 'erreur serveur interne' });
     }
 }};
 
