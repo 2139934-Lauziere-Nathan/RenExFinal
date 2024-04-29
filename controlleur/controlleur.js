@@ -4,6 +4,7 @@ const controlleur = {
 getall: async (req, res) => {
     console.log("controlleur pass");
     const auteur_id = req.params.id;
+    console.log(auteur_id);
     try {
         const tache = await model.getAll(auteur_id);
         if (!tache) {
