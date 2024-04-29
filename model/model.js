@@ -1,12 +1,12 @@
-const db = require("../.src/config/pg_db").default;
+const db = require("../.src/config/pg_db");
 
 
 const mod = {
-    getAll: (utilisateur_id) => {
-        console.log(utilisateur_id);
+    getAll: (id) => {
+        console.log(id);
         return new Promise((resolve, reject) => {
             const query = 'SELECT * FROM public.taches WHERE utilisateur_id = $1';
-            const value = [utilisateur_id]
+            const value = [id]
             db.query(query, value, (err, result) => {
                 if (err) {
                     reject(err);
