@@ -1,4 +1,4 @@
-const model = require('../model/model');
+import model from '../model/model';
 
 const controlleur = {
 getall: async (req, res) => {
@@ -18,4 +18,4 @@ getall: async (req, res) => {
     }
 }};
 
-module.exports = controlleur;
+export default controlleur;
