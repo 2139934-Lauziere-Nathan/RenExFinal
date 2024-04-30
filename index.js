@@ -1,7 +1,8 @@
-import express, { json } from 'express';
+const express = require('express');
+const pg = require('pg');
 const app = express();
 const PORT = 3000;
-app.use(json());
+app.use(express.json());
 app.get('/', (req, res) => {
     res.send("<p>index</p>");
 });

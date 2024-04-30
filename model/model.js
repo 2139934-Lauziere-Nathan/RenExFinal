@@ -1,4 +1,4 @@
-import db from "../.src/config/pg_db";
+const db = require("../.src/config/pg_db").default;
 
 
 const mod = {
@@ -18,4 +18,4 @@ const mod = {
         });
     }
 };
-export default mod;
+module.exports = mod;

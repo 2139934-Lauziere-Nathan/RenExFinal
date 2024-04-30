@@ -1,10 +1,10 @@
-import { Router } from 'express';
-const router = Router();    
-import controller from '../controlleur/controlleur';
+const express = require('express');
+const router = express.Router();    
+const controller = require('../controlleur/controlleur').default;
 
 
 //creation de la route pour tout afficher
 router.get('/tous/:id', controller.getall);
 
 
-export default router;
+module.exports = router;
