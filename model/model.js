@@ -1,4 +1,4 @@
-const db = require("../.src/config/pg_db").default;
+const db = require("../.src/config/pg_db.js").default;
 
 
 const mod = {
